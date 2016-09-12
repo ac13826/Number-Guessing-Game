@@ -31,15 +31,15 @@ int main()
       cin >> guess; //console in, whatever the user puts in goes to the variable, guess
 
       
-      if (guess>100, guess<(number-number))
+      if (guess>100, guess<(number-number)) //if the number is greater than 100 or less than 0
 	{
 	  cout << "That is not a number between 0 and 100" << endl;
 	}
-      if (guess>number)
+      if (guess>number)//if the user's guess is greater than the random number
 	    {
 	      cout << "Your guess was too big!" << endl;
 	    }
-      if (guess<number)
+      if (guess<number)//if the user's guess is less than the random number
 	    {
 	      cout << "Your guess was too small!" << endl;
 	    }
@@ -58,18 +58,18 @@ int main()
 	} */
 
       
-      num = num + 1;
+      num = num + 1; //add 1 for each time this loop occurs
     }
  
   cout << "CONGRATS!!!! you got the number!" << endl;
-  cout << "you guessed " << num << " times" << endl;
+  cout << "you guessed " << num << " times" << endl; //the number of times the person guessed
   cout << "Would you like to restart (y/n)?" << endl;
   //system("pause");
 
-  char again;
+  char again;//does the person want to try again? if so it's a y/n question
 
   cin >> again;
-  if (again == 'y')
+  if (again == 'y')//if y restart, if not... end
     {
       goto start;
     }
